@@ -13,10 +13,8 @@ maintainers = ["eric_G"]
 
 [upstream]
 license = "GPL-3.0"
-website = "https://example.com"
+website = "https://www.esteetey.dev/"
 demo = "https://mini-qr-code-generator.vercel.app/"
-admindoc = "https://doc.yunohost.org/dev/packaging/"
-userdoc = "https://yunohost.org/apps"
 code = "https://github.com/lyqht/mini-qr"
 
 [integration]
@@ -52,7 +50,7 @@ ram.runtime = "50M"
     url = "https://github.com/lyqht/mini-qr/archive/refs/tags/v0.28.0.tar.gz"
     sha256 = "bb173f27ca470124f9353721ce34056626351bc4c307d54a84610207419f2e5e"
 
-    # autoupdate.strategy = "latest_github_tag"
+    autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]
 
@@ -60,6 +58,9 @@ ram.runtime = "50M"
 
     [resources.permissions]
     main.url = "/"
+
+    [resources.apt]
+    packages = "php8.4-fpm"
 
     [resources.nodejs]
     version = "22"
