@@ -1,1 +1,1 @@
-This is a dummy description of this app features
+An app to create beautiful QR codes and scan various QR code types.
